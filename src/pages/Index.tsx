@@ -10,6 +10,7 @@ import TestimonialSection from '@/components/home/TestimonialSection';
 import NewsletterSection from '@/components/home/NewsletterSection';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
 import SpecialOffers from '@/components/home/SpecialOffers';
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 const Index = () => {
   useEffect(() => {
@@ -18,20 +19,22 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative">
-      <Header />
-      <main>
-        <Hero />
-        <SpecialOffers />
-        <BestSellers />
-        <FeaturedProducts />
-        <CategoryShowcase />
-        <StorySection />
-        <TestimonialSection />
-        <NewsletterSection />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen relative">
+        <Header />
+        <main>
+          <Hero />
+          <SpecialOffers />
+          <BestSellers />
+          <FeaturedProducts />
+          <CategoryShowcase />
+          <StorySection />
+          <TestimonialSection />
+          <NewsletterSection />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 };
 

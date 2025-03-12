@@ -1,14 +1,20 @@
 
 import React, { useState, useEffect } from 'react';
-import { ShoppingCart, Menu, X, Phone } from 'lucide-react';
+import { ShoppingCart, Menu, X, Phone, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'hi' : 'en');
   };
 
   useEffect(() => {
@@ -22,12 +28,12 @@ const Header: React.FC = () => {
   }, []);
 
   const navigationItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Our Sweets', href: '/sweets' },
-    { name: 'Categories', href: '/categories' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' }
+    { name: t('home'), href: '/' },
+    { name: t('about'), href: '/about' },
+    { name: t('sweets'), href: '/sweets' },
+    { name: t('categories'), href: '/categories' },
+    { name: t('gallery'), href: '/gallery' },
+    { name: t('contact'), href: '/contact' }
   ];
 
   return (
@@ -44,7 +50,7 @@ const Header: React.FC = () => {
           isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
         )}>
           <div className="text-muted-foreground">
-            <span className="hidden sm:inline">Authentic Rajasthani Sweets Since 1975</span>
+            <span className="hidden sm:inline">{t('since')}</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="tel:+919876543210" className="flex items-center gap-1 hover:text-primary transition-colors">
@@ -52,7 +58,15 @@ const Header: React.FC = () => {
               <span>+91 98765 43210</span>
             </a>
             <span className="h-4 w-px bg-border" />
-            <a href="/order-tracking" className="hover:text-primary transition-colors">Track Order</a>
+            <a href="/order-tracking" className="hover:text-primary transition-colors">{t('trackOrder')}</a>
+            <span className="h-4 w-px bg-border" />
+            <button 
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 hover:text-rajasthani-pink transition-colors"
+            >
+              <Globe size={14} />
+              <span className="text-rajasthani-pink hover:underline">{t('switchLanguage')}</span>
+            </button>
           </div>
         </div>
         
@@ -79,6 +93,14 @@ const Header: React.FC = () => {
           </div>
           
           <div className="flex items-center gap-4">
+            <button
+              onClick={toggleLanguage}
+              className="hidden md:flex items-center gap-1 px-3 py-1.5 bg-rajasthani-orange/10 text-rajasthani-orange rounded-full text-sm font-medium hover:bg-rajasthani-orange/20 transition-colors"
+            >
+              <Globe size={16} />
+              <span>{t('switchLanguage')}</span>
+            </button>
+            
             <a 
               href="/cart" 
               className="relative p-2 text-foreground/80 hover:text-primary transition-colors"
@@ -118,6 +140,13 @@ const Header: React.FC = () => {
                 {item.name}
               </a>
             ))}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 py-3 text-rajasthani-orange font-medium"
+            >
+              <Globe size={18} />
+              {t('switchLanguage')}
+            </button>
           </nav>
         </div>
       </div>
