@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -74,7 +75,7 @@ export default {
 					maroon: "#800000",
 					brown: "#8B4513",
 					green: "#006400",
-					deep: "#5B1510",
+					deep: "#5B1510", // Main color
 					rust: "#8A3324",
 					copper: "#B87333",
 					clay: "#CB7B58",
