@@ -64,16 +64,18 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				rajasthani: {
-					red: "#D9314A",
+					red: "#E83A3A",
 					orange: "#FF7733",
 					yellow: "#FFB930",
 					gold: "#D4AF37",
 					blue: "#2A5596",
-					teal: "#17807D",
+					teal: "#008080",
 					pink: "#FF69B4",
 					cream: "#FFF8E1",
 					maroon: "#800000",
-					brown: "#8B4513"
+					brown: "#8B4513",
+					green: "#006400",
+					deep: "#4C1E16"
 				}
 			},
 			borderRadius: {
@@ -136,7 +138,8 @@ export default {
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/patterns/rajasthani-pattern.svg')",
-				'rajasthani-border': "linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)"
+				'rajasthani-border': "linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)",
+				'janta-gradient': "linear-gradient(90deg, #FFF8E1 0%, #FFECCF 100%)"
 			}
 		}
 	},

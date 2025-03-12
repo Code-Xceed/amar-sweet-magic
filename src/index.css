@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Rozha+One&display=swap');
 
 @tailwind base;
@@ -16,10 +15,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 20 36% 15%;
 
-    --primary: 24 90% 48%;
+    --primary: 0 83% 56%;
     --primary-foreground: 60 30% 96%;
 
-    --secondary: 12 90% 55%;
+    --secondary: 24 100% 60%;
     --secondary-foreground: 24 10% 10%;
 
     --muted: 60 15% 94%;
@@ -33,7 +32,7 @@
 
     --border: 24 8% 85%;
     --input: 24 8% 85%;
-    --ring: 24 90% 48%;
+    --ring: 0 83% 56%;
 
     --radius: 0.5rem;
 
@@ -57,7 +56,7 @@
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
 
-    --primary: 24 70% 58%;
+    --primary: 0 83% 56%;
     --primary-foreground: 24 10% 10%;
 
     --secondary: 12 70% 45%;
@@ -74,7 +73,7 @@
 
     --border: 12 6.5% 20.5%;
     --input: 12 6.5% 20.5%;
-    --ring: 24 70% 58%;
+    --ring: 0 83% 56%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -126,15 +125,15 @@
   }
   
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-6 py-3 text-base font-medium shadow-md transition-all duration-300 hover:bg-primary/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-md bg-rajasthani-red text-white px-6 py-3 text-base font-medium shadow-md transition-all duration-300 hover:bg-rajasthani-red/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-rajasthani-red/50 focus:ring-offset-2;
   }
   
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground px-6 py-3 text-base font-medium shadow-md transition-all duration-300 hover:bg-secondary/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-md bg-rajasthani-orange text-white px-6 py-3 text-base font-medium shadow-md transition-all duration-300 hover:bg-rajasthani-orange/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-rajasthani-orange/50 focus:ring-offset-2;
   }
   
   .btn-outline {
-    @apply inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-base font-medium shadow-sm transition-all duration-300 hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-md border border-rajasthani-deep bg-transparent px-6 py-3 text-base font-medium text-rajasthani-deep shadow-sm transition-all duration-300 hover:bg-rajasthani-deep hover:text-white focus:outline-none focus:ring-2 focus:ring-rajasthani-deep/50 focus:ring-offset-2;
   }
 
   .decorative-line {
@@ -151,6 +150,10 @@
   
   .decorative-line-both {
     @apply before:right-full before:-mr-6 after:left-full after:-ml-6;
+  }
+
+  .janta-card {
+    @apply relative overflow-hidden rounded-lg bg-gradient-to-br from-rajasthani-cream to-white border border-rajasthani-gold/20 shadow-md hover:shadow-lg transition-all duration-300;
   }
 }
 

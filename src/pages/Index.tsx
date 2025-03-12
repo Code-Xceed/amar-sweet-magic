@@ -7,6 +7,9 @@ import BestSellers from '@/components/home/BestSellers';
 import CategoryShowcase from '@/components/home/CategoryShowcase';
 import StorySection from '@/components/home/StorySection';
 import TestimonialSection from '@/components/home/TestimonialSection';
+import NewsletterSection from '@/components/home/NewsletterSection';
+import FeaturedProducts from '@/components/home/FeaturedProducts';
+import SpecialOffers from '@/components/home/SpecialOffers';
 
 const Index = () => {
   useEffect(() => {
@@ -19,10 +22,13 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <SpecialOffers />
         <BestSellers />
+        <FeaturedProducts />
         <CategoryShowcase />
         <StorySection />
         <TestimonialSection />
+        <NewsletterSection />
       </main>
       <Footer />
     </div>
