@@ -7,14 +7,14 @@ const SpecialOffers: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-10 bg-gradient-to-r from-rajasthani-deep to-rajasthani-maroon text-white">
+    <section className="py-10 bg-gradient-to-r from-rajasthani-deep to-rajasthani-rust text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x divide-white/20">
           <div className="flex items-center justify-center p-4 hover:bg-white/10 transition-colors rounded-lg">
             <div className="relative">
-              <div className="absolute inset-0 bg-rajasthani-orange/20 rounded-full blur-md"></div>
+              <div className="absolute inset-0 bg-rajasthani-clay/20 rounded-full blur-md"></div>
               <div className="relative">
-                <Truck className="w-10 h-10 mr-4 text-rajasthani-yellow filter drop-shadow-gold" />
+                <Truck className="w-10 h-10 mr-4 text-rajasthani-sand filter drop-shadow-gold" />
               </div>
             </div>
             <div>
@@ -25,7 +25,7 @@ const SpecialOffers: React.FC = () => {
           
           <div className="flex items-center justify-center p-4 hover:bg-white/10 transition-colors rounded-lg">
             <div className="relative">
-              <div className="absolute inset-0 bg-rajasthani-yellow/20 rounded-full blur-md"></div>
+              <div className="absolute inset-0 bg-rajasthani-copper/20 rounded-full blur-md"></div>
               <div className="relative">
                 <Gift className="w-10 h-10 mr-4 text-rajasthani-gold filter drop-shadow-gold" />
               </div>
@@ -38,9 +38,9 @@ const SpecialOffers: React.FC = () => {
           
           <div className="flex items-center justify-center p-4 hover:bg-white/10 transition-colors rounded-lg">
             <div className="relative">
-              <div className="absolute inset-0 bg-rajasthani-cream/20 rounded-full blur-md"></div>
+              <div className="absolute inset-0 bg-rajasthani-sand/20 rounded-full blur-md"></div>
               <div className="relative">
-                <Clock className="w-10 h-10 mr-4 text-rajasthani-pink filter drop-shadow-gold" />
+                <Clock className="w-10 h-10 mr-4 text-rajasthani-clay filter drop-shadow-gold" />
               </div>
             </div>
             <div>

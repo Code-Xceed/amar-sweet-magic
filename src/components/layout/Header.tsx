@@ -53,19 +53,19 @@ const Header: React.FC = () => {
             <span className="hidden sm:inline">{t('since')}</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+919876543210" className="flex items-center gap-1 hover:text-primary transition-colors">
+            <a href="tel:+919876543210" className="flex items-center gap-1 hover:text-rajasthani-deep transition-colors">
               <Phone size={14} />
               <span>+91 98765 43210</span>
             </a>
             <span className="h-4 w-px bg-border" />
-            <a href="/order-tracking" className="hover:text-primary transition-colors">{t('trackOrder')}</a>
+            <a href="/order-tracking" className="hover:text-rajasthani-deep transition-colors">{t('trackOrder')}</a>
             <span className="h-4 w-px bg-border" />
             <button 
               onClick={toggleLanguage}
-              className="flex items-center gap-1 hover:text-rajasthani-pink transition-colors"
+              className="flex items-center gap-1 hover:text-rajasthani-rust transition-colors"
             >
               <Globe size={14} />
-              <span className="text-rajasthani-pink hover:underline">{t('switchLanguage')}</span>
+              <span className="text-rajasthani-rust hover:underline">{t('switchLanguage')}</span>
             </button>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground/90 hover:text-primary font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:origin-center after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+                  className="text-foreground/90 hover:text-rajasthani-deep font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-rajasthani-deep after:origin-center after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
                 >
                   {item.name}
                 </a>
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={toggleLanguage}
-              className="hidden md:flex items-center gap-1 px-3 py-1.5 bg-rajasthani-orange/10 text-rajasthani-orange rounded-full text-sm font-medium hover:bg-rajasthani-orange/20 transition-colors"
+              className="hidden md:flex items-center gap-1 px-3 py-1.5 bg-rajasthani-deep/10 text-rajasthani-deep rounded-full text-sm font-medium hover:bg-rajasthani-deep/20 transition-colors"
             >
               <Globe size={16} />
               <span>{t('switchLanguage')}</span>
@@ -103,18 +103,18 @@ const Header: React.FC = () => {
             
             <a 
               href="/cart" 
-              className="relative p-2 text-foreground/80 hover:text-primary transition-colors"
+              className="relative p-2 text-foreground/80 hover:text-rajasthani-deep transition-colors"
               aria-label="Shopping cart"
             >
               <ShoppingCart size={24} />
-              <span className="absolute top-0 right-0 flex h-5 w-5 items-center justify-center rounded-full bg-rajasthani-red text-white text-xs">
+              <span className="absolute top-0 right-0 flex h-5 w-5 items-center justify-center rounded-full bg-rajasthani-deep text-white text-xs">
                 0
               </span>
             </a>
             
             <button
               onClick={toggleMobileMenu}
-              className="p-2 lg:hidden text-foreground/80 hover:text-primary transition-colors"
+              className="p-2 lg:hidden text-foreground/80 hover:text-rajasthani-deep transition-colors"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -134,7 +134,7 @@ const Header: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="py-2 text-foreground/90 hover:text-primary font-medium transition-colors duration-200 border-b border-border/30 last:border-b-0"
+                className="py-2 text-foreground/90 hover:text-rajasthani-deep font-medium transition-colors duration-200 border-b border-border/30 last:border-b-0"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
@@ -142,7 +142,7 @@ const Header: React.FC = () => {
             ))}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 py-3 text-rajasthani-orange font-medium"
+              className="flex items-center gap-2 py-3 text-rajasthani-deep font-medium"
             >
               <Globe size={18} />
               {t('switchLanguage')}
