@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Menu, X, Phone, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Logo from '@/components/ui/Logo';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -74,9 +75,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <a href="/" className="mr-8">
-              <h1 className="text-2xl md:text-3xl font-display font-bold text-gradient">
-                Amar Sweet Home
-              </h1>
+              <Logo variant={isScrolled ? "primary" : "primary"} size="md" />
             </a>
             
             <nav className="hidden lg:flex space-x-8">

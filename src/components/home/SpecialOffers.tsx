@@ -2,6 +2,7 @@
 import React from 'react';
 import { Gift, Truck, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Logo from '../ui/Logo';
 
 const SpecialOffers: React.FC = () => {
   const { t } = useLanguage();
@@ -9,6 +10,9 @@ const SpecialOffers: React.FC = () => {
   return (
     <section className="py-10 bg-gradient-to-r from-rajasthani-deep to-rajasthani-rust text-white">
       <div className="container mx-auto px-4">
+        <div className="flex justify-center mb-8">
+          <Logo variant="light" size="sm" />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x divide-white/20">
           <div className="flex items-center justify-center p-4 hover:bg-white/10 transition-colors rounded-lg">
             <div className="relative">

@@ -3,6 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Product } from '@/types';
 import { ShoppingCart } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ProductCardProps {
   product: Product;
@@ -11,6 +12,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, className }) => {
   const { name, description, price, image, isNew, isPopular, weight } = product;
+  const { t } = useLanguage();
   
   return (
     <div 
@@ -33,18 +35,21 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, className }) => {
           <div className="absolute top-2 left-2 z-20 flex flex-col gap-2">
             {isNew && (
               <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-rajasthani-blue text-white">
-                New
+                {t('new')}
               </span>
             )}
             {isPopular && (
               <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-rajasthani-red text-white">
-                Bestseller
+                {t('bestseller')}
               </span>
             )}
           </div>
         )}
         
-        <button className="absolute bottom-4 right-4 z-20 bg-rajasthani-deep text-white p-2 rounded-full opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+        <button 
+          aria-label={t('addToCart')}
+          className="absolute bottom-4 right-4 z-20 bg-rajasthani-deep text-white p-2 rounded-full opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+        >
           <ShoppingCart size={20} />
         </button>
       </div>
@@ -66,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, className }) => {
           <button 
             className="px-3 py-1.5 rounded-md bg-rajasthani-red/10 text-rajasthani-red font-medium text-sm transition-all duration-300 hover:bg-rajasthani-red hover:text-white"
           >
-            Add to Cart
+            {t('addToCart')}
           </button>
         </div>
       </div>
