@@ -1,0 +1,492 @@
+
+/* About Page Styles */
+
+/* Page Header */
+.page-header {
+  background: url('../images/pattern-bg.svg'), linear-gradient(to right, #5B1510, #8A3324);
+  background-size: contain;
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(91, 21, 16, 0.85);
+  z-index: 1;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.breadcrumbs a {
+  color: #FFF8E1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+  color: #D8B787;
+}
+
+.breadcrumbs .separator {
+  color: #D8B787;
+}
+
+/* About Story Section */
+.about-story {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-experience {
+  position: absolute;
+  right: -30px;
+  bottom: 30px;
+  background: #5B1510;
+  color: #FFF8E1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 130px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-experience .years {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-experience .text {
+  font-size: 0.9rem;
+}
+
+.about-text .sub-heading {
+  display: inline-block;
+  color: #8A3324;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #5B1510;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-text p {
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(91, 21, 16, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #5B1510;
+}
+
+.feature-text h3 {
+  font-size: 1.1rem;
+  color: #5B1510;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.feature-text p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 80px 0;
+  background-color: #FFF8E1;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.mission-text .sub-heading {
+  display: inline-block;
+  color: #8A3324;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.mission-text h2 {
+  font-size: 2.5rem;
+  color: #5B1510;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.mission-text p {
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.mission-list {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.mission-list li {
+  margin-bottom: 0.75rem;
+  color: #333;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.mission-list li::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background-color: #8A3324;
+  border-radius: 50%;
+}
+
+.mission-quote {
+  border-left: 4px solid #D8B787;
+  padding: 1rem 0 1rem 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #5B1510;
+}
+
+.mission-quote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.section-header .sub-heading {
+  display: inline-block;
+  color: #8A3324;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #5B1510;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.section-header p {
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+  height: 280px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.05);
+}
+
+.member-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.member-info h3 {
+  font-size: 1.3rem;
+  color: #5B1510;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.member-role {
+  color: #8A3324;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.member-bio {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 80px 0;
+  background-color: #FFF8E1;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.quote-icon {
+  color: #D8B787;
+  margin-bottom: 1rem;
+}
+
+.testimonial-content p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  color: #5B1510;
+  margin-bottom: 0.25rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.author-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .about-content,
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-image,
+  .mission-image {
+    order: -1;
+  }
+  
+  .about-experience {
+    right: 0;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    padding: 60px 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-story,
+  .mission-section,
+  .team-section,
+  .testimonial-section {
+    padding: 60px 0;
+  }
+  
+  .about-text h2,
+  .mission-text h2,
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature {
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+  }
+  
+  .feature-text {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .about-text h2,
+  .mission-text h2,
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .about-experience {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin: -60px auto 20px;
+  }
+  
+  .testimonial-content {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Amar Sweet Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header" class="header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="established-text">
+            <span data-lang-key="since">Established since 1975</span>
+          </div>
+          <div class="top-bar-links">
+            <a href="tel:+919876543210" class="top-bar-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 98765 43210</span>
+            </a>
+            <span class="separator"></span>
+            <a href="/order-tracking" class="top-bar-link" data-lang-key="trackOrder">Track Order</a>
+            <span class="separator"></span>
+            <button id="languageToggle" class="language-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span class="language-text" data-lang-key="switchToHindi">Switch to Hindi</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="main-nav">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#5B1510" />
+                <path d="M20 10C14.48 10 10 14.48 10 20C10 25.52 14.48 30 20 30C25.52 30 30 25.52 30 20C30 14.48 25.52 10 20 10ZM20 28C15.59 28 12 24.41 12 20C12 15.59 15.59 12 20 12C24.41 12 28 15.59 28 20C28 24.41 24.41 28 20 28Z" fill="#D8B787" />
+                <path d="M20 15C17.24 15 15 17.24 15 20C15 22.76 17.24 25 20 25C22.76 25 25 22.76 25 20C25 17.24 22.76 15 20 15Z" fill="#FFF8E1" />
+              </svg>
+            </div>
+            <span class="logo-text">Amar Sweet Home</span>
+          </a>
+          
+          <nav class="desktop-nav">
+            <ul class="nav-links">
+              <li><a href="index.html" data-lang-key="home">Home</a></li>
+              <li><a href="about.html" class="active" data-lang-key="about">About Us</a></li>
+              <li><a href="sweets.html" data-lang-key="sweets">Sweets</a></li>
+              <li><a href="categories.html" data-lang-key="categories">Categories</a></li>
+              <li><a href="gallery.html" data-lang-key="gallery">Gallery</a></li>
+              <li><a href="contact.html" data-lang-key="contact">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <div class="nav-right">
+            <button id="desktopLanguageToggle" class="desktop-language-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span class="language-text" data-lang-key="switchToHindi">Switch to Hindi</span>
+            </button>
+            
+            <a href="cart.html" class="cart-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              <span class="cart-count">0</span>
+            </a>
+            
+            <button id="mobileMenuToggle" class="mobile-menu-toggle">
+              <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+              <svg id="closeIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="mobileMenu" class="mobile-menu">
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html" data-lang-key="home">Home</a></li>
+          <li><a href="about.html" class="active" data-lang-key="about">About Us</a></li>
+          <li><a href="sweets.html" data-lang-key="sweets">Sweets</a></li>
+          <li><a href="categories.html" data-lang-key="categories">Categories</a></li>
+          <li><a href="gallery.html" data-lang-key="gallery">Gallery</a></li>
+          <li><a href="contact.html" data-lang-key="contact">Contact</a></li>
+        </ul>
+        <button id="mobileLanguageToggle" class="mobile-language-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span class="language-text" data-lang-key="switchToHindi">Switch to Hindi</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 data-lang-key="about-us">About Us</h1>
+      <div class="breadcrumbs">
+        <a href="index.html" data-lang-key="home">Home</a>
+        <span class="separator">/</span>
+        <span data-lang-key="about-us">About Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="about-story">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1605197161470-5c85c5d15b7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sweet shop tradition">
+          <div class="about-experience">
+            <span class="years">45+</span>
+            <span class="text" data-lang-key="years-excellence">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="sub-heading decorative-line decorative-line-left" data-lang-key="our-sweet-story">Our Sweet Story</span>
+          <h2 data-lang-key="heritage">A Heritage of Taste Since 1975</h2>
+          <p data-lang-key="story-para-1">Amar Sweet Home was founded in 1975 by Shri Ratan Lal Sharma, who started with a small shop in the heart of old Jodhpur city. With a passion for authentic Rajasthani sweets and unwavering commitment to quality, what began as a modest establishment has evolved into one of the most beloved sweet destinations in Rajasthan.</p>
+          <p data-lang-key="story-para-2">For over four decades, we have preserved the authentic taste of traditional Rajasthani sweets, using recipes passed down through generations. Every sweet we craft tells a story of our rich cultural heritage and the royal legacy of Rajasthan.</p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path><path d="M10 2c1 .5 2 2 2 5"></path></svg>
+              </div>
+              <div class="feature-text">
+                <h3 data-lang-key="traditional-recipes">Traditional Recipes</h3>
+                <p data-lang-key="traditional-recipes-desc">Authentic methods preserved through generations</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              </div>
+              <div class="feature-text">
+                <h3 data-lang-key="made-with-love">Made with Love</h3>
+                <p data-lang-key="made-with-love-desc">Handcrafted with passion and attention to detail</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.21 13.89 7 23l9-9-8.99-9L6 13.89"></path><path d="M15 9l-5-5"></path><path d="m22 6-3-3"></path><path d="M6 13.89 3.51 11.4a1.11 1.11 0 0 1 0-1.57l6.923-6.922c.432-.433 1.138-.433 1.57 0L15.48 6.4a1.11 1.11 0 0 1 0 1.57l-6.59 6.59"></path></svg>
+              </div>
+              <div class="feature-text">
+                <h3 data-lang-key="premium-quality">Premium Quality</h3>
+                <p data-lang-key="premium-quality-desc">Only the finest ingredients sourced locally</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission Section -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="mission-content">
+        <div class="mission-text">
+          <span class="sub-heading decorative-line decorative-line-left">Our Mission</span>
+          <h2>Preserving Tradition with Every Sweet</h2>
+          <p>At Amar Sweet Home, our mission is to preserve the rich culinary heritage of Rajasthan by crafting authentic sweets that celebrate our traditional flavors and techniques. We are committed to:</p>
+          <ul class="mission-list">
+            <li>Using only the purest ingredients and traditional cooking methods</li>
+            <li>Maintaining the authentic taste that represents our cultural identity</li>
+            <li>Creating memorable sweet experiences for our customers</li>
+            <li>Supporting local farmers and suppliers</li>
+            <li>Innovating while respecting tradition</li>
+          </ul>
+          <blockquote class="mission-quote">
+            "Our sweets don't just satisfy hunger; they nourish the soul and keep our traditions alive for future generations."
+            <cite>- Shri Ratan Lal Sharma, Founder</cite>
+          </blockquote>
+        </div>
+        <div class="mission-image">
+          <img src="https://images.unsplash.com/photo-1579697096985-41fe1430e5df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sweet making process">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading decorative-line decorative-line-both">Meet Our Team</span>
+        <h2>The Sweet Artisans</h2>
+        <p>Meet the dedicated team behind our delicious creations, carrying forward a legacy of taste and tradition.</p>
+      </div>
+      <div class="team-members">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vikram Sharma">
+          </div>
+          <div class="member-info">
+            <h3>Vikram Sharma</h3>
+            <p class="member-role">Head Chef & Managing Director</p>
+            <p class="member-bio">Vikram, son of the founder, has been perfecting the art of sweet making since childhood. His innovative approach while respecting tradition has helped evolve our recipes.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1571942676516-bcab84649e44?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anita Devi">
+          </div>
+          <div class="member-info">
+            <h3>Anita Devi</h3>
+            <p class="member-role">Master Sweet Maker</p>
+            <p class="member-bio">With over 30 years of experience, Anita leads our production kitchen. Her expertise in traditional techniques ensures consistency in taste and quality.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1596510914841-40fbc0836d0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Raj Kumar">
+          </div>
+          <div class="member-info">
+            <h3>Raj Kumar</h3>
+            <p class="member-role">Quality Control Expert</p>
+            <p class="member-bio">Raj ensures that every sweet that leaves our kitchen meets our high standards. His meticulous attention to detail is legendary.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading decorative-line decorative-line-both">Testimonials</span>
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+            </div>
+            <p>The Kesar Peda from Amar Sweet Home takes me back to my childhood in Rajasthan. The authentic taste is unmatched by any other sweet shop I've tried.</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Meena Kumari">
+              <div class="author-info">
+                <h4>Meena Kumari</h4>
+                <p>Loyal Customer for 15 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+            </div>
+            <p>We ordered gift packs for our corporate clients during Diwali, and the presentation was as impressive as the taste. Our clients couldn't stop praising the quality.</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Agarwal">
+              <div class="author-info">
+                <h4>Rajesh Agarwal</h4>
+                <p>Business Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col about-col">
+          <div class="footer-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#FFF8E1" />
+                <path d="M20 10C14.48 10 10 14.48 10 20C10 25.52 14.48 30 20 30C25.52 30 30 25.52 30 20C30 14.48 25.52 10 20 10ZM20 28C15.59 28 12 24.41 12 20C12 15.59 15.59 12 20 12C24.41 12 28 15.59 28 20C28 24.41 24.41 28 20 28Z" fill="#5B1510" />
+                <path d="M20 15C17.24 15 15 17.24 15 20C15 22.76 17.24 25 20 25C22.76 25 25 22.76 25 20C25 17.24 22.76 15 20 15Z" fill="#8A3324" />
+              </svg>
+            </div>
+            <span class="logo-text">Amar Sweet Home</span>
+          </div>
+          <p>Delighting taste buds with authentic Rajasthani sweets since 1975. Our recipes have been passed down for generations, preserving the rich heritage of traditional Indian confections.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col links-col">
+          <h3 data-lang-key="quick-links">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" data-lang-key="home">Home</a></li>
+            <li><a href="about.html" data-lang-key="about-us">About Us</a></li>
+            <li><a href="sweets.html" data-lang-key="our-sweets">Our Sweets</a></li>
+            <li><a href="categories.html" data-lang-key="categories">Categories</a></li>
+            <li><a href="gallery.html" data-lang-key="gallery">Gallery</a></li>
+            <li><a href="contact.html" data-lang-key="contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col contact-col">
+          <h3 data-lang-key="contact-us">Contact Us</h3>
+          <ul class="contact-info">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>123 Sweet Lane, Jodhpur Old City, Rajasthan, India - 342001</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <a href="mailto:info@amarsweethome.com">info@amarsweethome.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <div>
+                <p>Monday - Saturday: 8:00 AM - 9:00 PM</p>
+                <p>Sunday: 9:00 AM - 6:00 PM</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter-col">
+          <h3 data-lang-key="subscribe">Subscribe</h3>
+          <p data-lang-key="footer-subscribe-text">Stay updated with our latest offerings and seasonal specials.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="emailInput" placeholder="Your Email" required>
+              <button type="submit" data-lang-key="subscribe">Subscribe</button>
+            </div>
+            <div id="successMessage" class="success-message hidden" data-lang-key="thank-you">Thank you for subscribing! Sweet updates coming your way.</div>
+          </form>
+          <p class="subscribe-note" data-lang-key="subscribe-note">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2023</span> Amar Sweet Home. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-lang-key="privacy-policy">Privacy Policy</a>
+          <a href="#" data-lang-key="terms">Terms of Service</a>
+          <a href="#" data-lang-key="shipping">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>
