@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Sweets - Amar Sweet Home | Authentic Rajasthani Sweets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sweets.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <p class="tagline">Authentic Rajasthani Sweets Since 1975</p>
+        <div class="top-bar-links">
+          <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
+          <span class="separator"></span>
+          <a href="tracking.html">Track Order</a>
+          <span class="separator"></span>
+          <button class="language-toggle" id="languageToggle">
+            <i class="fas fa-globe"></i> हिंदी में देखें
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Amar Sweet Home Logo">
+          </a>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sweets.html" class="active">Our Sweets</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right">
+          <button class="mobile-language-toggle">
+            <i class="fas fa-globe"></i>
+          </button>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sweets.html" class="active">Our Sweets</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-language-toggle-menu">
+        <i class="fas fa-globe"></i> हिंदी में देखें
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Sweets</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span>Our Sweets</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sweets Filter Bar -->
+  <section class="sweets-filter">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="all">All Sweets</button>
+          <button class="filter-btn" data-filter="milk-sweets">Milk Sweets</button>
+          <button class="filter-btn" data-filter="dry-fruit">Dry Fruit Delights</button>
+          <button class="filter-btn" data-filter="festival">Festival Specials</button>
+          <button class="filter-btn" data-filter="ladoo">Traditional Ladoos</button>
+          <button class="filter-btn" data-filter="regional">Regional Specialties</button>
+        </div>
+        <div class="sort-options">
+          <label for="sort-select">Sort by:</label>
+          <select id="sort-select">
+            <option value="popularity">Popularity</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+          </select>
+        </div>
+      </div>
+      <div class="active-filters">
+        <span class="filter-tag">All Sweets <button class="remove-filter"><i class="fas fa-times"></i></button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sweets Grid -->
+  <section class="sweets-grid">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="milk-sweets festival">
+          <div class="product-image">
+            <img src="images/kesar-peda.jpg" alt="Kesar Peda">
+            <div class="product-tags">
+              <span class="tag new">New</span>
+              <span class="tag bestseller">Bestseller</span>
+            </div>
+            <button class="quick-view-btn" data-product="kesar-peda">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Kesar Peda</h3>
+            <p class="product-weight">250g</p>
+            <p class="product-desc">Traditional milk-based sweet flavored with saffron and cardamom.</p>
+            <div class="product-footer">
+              <span class="price">₹350</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="festival regional">
+          <div class="product-image">
+            <img src="images/rajasthani-ghevar.jpg" alt="Rajasthani Ghevar">
+            <div class="product-tags">
+              <span class="tag bestseller">Bestseller</span>
+            </div>
+            <button class="quick-view-btn" data-product="rajasthani-ghevar">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Rajasthani Ghevar</h3>
+            <p class="product-weight">500g</p>
+            <p class="product-desc">Disc-shaped sweet cake made with flour and soaked in sugar syrup.</p>
+            <div class="product-footer">
+              <span class="price">₹450</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="ladoo">
+          <div class="product-image">
+            <img src="images/besan-ladoo.jpg" alt="Besan Ladoo">
+            <button class="quick-view-btn" data-product="besan-ladoo">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Besan Ladoo</h3>
+            <p class="product-weight">500g</p>
+            <p class="product-desc">Spherical sweets made from gram flour, ghee, and sugar.</p>
+            <div class="product-footer">
+              <span class="price">₹300</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="regional dry-fruit">
+          <div class="product-image">
+            <img src="images/mawa-kachori.jpg" alt="Mawa Kachori">
+            <div class="product-tags">
+              <span class="tag new">New</span>
+            </div>
+            <button class="quick-view-btn" data-product="mawa-kachori">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Mawa Kachori</h3>
+            <p class="product-weight">400g</p>
+            <p class="product-desc">Sweet kachori filled with khoya and dry fruits, a Jodhpur specialty.</p>
+            <div class="product-footer">
+              <span class="price">₹420</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="milk-sweets">
+          <div class="product-image">
+            <img src="images/kalakand.jpg" alt="Kalakand">
+            <button class="quick-view-btn" data-product="kalakand">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Kalakand</h3>
+            <p class="product-weight">500g</p>
+            <p class="product-desc">Milk cake with a grainy texture, flavored with cardamom and topped with pistachios.</p>
+            <div class="product-footer">
+              <span class="price">₹380</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="milk-sweets festival">
+          <div class="product-image">
+            <img src="images/mohan-bhog.jpg" alt="Mohan Bhog">
+            <div class="product-tags">
+              <span class="tag bestseller">Bestseller</span>
+            </div>
+            <button class="quick-view-btn" data-product="mohan-bhog">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Mohan Bhog</h3>
+            <p class="product-weight">250g</p>
+            <p class="product-desc">Soft and delicate sweet made with milk solids, sugar and flavored with saffron.</p>
+            <div class="product-footer">
+              <span class="price">₹320</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" data-category="milk-sweets dry-fruit">
+          <div class="product-image">
+            <img src="images/rajbhog.jpg" alt="Raj Bhog">
+            <button class="quick-view-btn" data-product="rajbhog">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Raj Bhog</h3>
+            <p class="product-weight">500g</p>
+            <p class="product-desc">Large-sized rasgulla stuffed with dry fruits and saffron, a royal delicacy.</p>
+            <div class="product-footer">
+              <span class="price">₹480</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" data-category="ladoo regional">
+          <div class="product-image">
+            <img src="images/churma-ladoo.jpg" alt="Churma Ladoo">
+            <div class="product-tags">
+              <span class="tag bestseller">Bestseller</span>
+            </div>
+            <button class="quick-view-btn" data-product="churma-ladoo">Quick View</button>
+            <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Churma Ladoo</h3>
+            <p class="product-weight">500g</p>
+            <p class="product-desc">Traditional Rajasthani sweet made from wheat flour, ghee and jaggery.</p>
+            <div class="product-footer">
+              <span class="price">₹350</span>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more-container">
+        <button class="load-more-btn">Load More Sweets</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick View Modal -->
+  <div class="quick-view-modal" id="quickViewModal">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <div class="product-details">
+        <div class="product-image-gallery">
+          <div class="main-image">
+            <img src="images/kesar-peda.jpg" alt="Product" id="modalMainImage">
+          </div>
+          <div class="thumbnail-gallery">
+            <div class="thumbnail active"><img src="images/kesar-peda.jpg" alt="Thumbnail 1"></div>
+            <div class="thumbnail"><img src="images/kesar-peda-2.jpg" alt="Thumbnail 2"></div>
+            <div class="thumbnail"><img src="images/kesar-peda-3.jpg" alt="Thumbnail 3"></div>
+          </div>
+        </div>
+        <div class="product-info">
+          <h2 id="modalProductTitle">Kesar Peda</h2>
+          <div class="product-meta">
+            <p class="product-weight" id="modalProductWeight">250g</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(4.5/5)</span>
+            </div>
+          </div>
+          <p class="product-price">₹<span id="modalProductPrice">350</span></p>
+          <div class="product-description">
+            <p id="modalProductDescription">Traditional milk-based sweet flavored with saffron and cardamom. Made with pure ghee and milk, this delicacy is perfect for festivals and special occasions.</p>
+          </div>
+          <div class="product-variants">
+            <h4>Choose Pack Size:</h4>
+            <div class="variant-options">
+              <button class="variant-btn active" data-price="350" data-weight="250g">250g</button>
+              <button class="variant-btn" data-price="650" data-weight="500g">500g</button>
+              <button class="variant-btn" data-price="1200" data-weight="1kg">1kg</button>
+            </div>
+          </div>
+          <div class="product-quantity">
+            <h4>Quantity:</h4>
+            <div class="quantity-selector">
+              <button class="decrease-qty">-</button>
+              <input type="number" value="1" min="1" max="10" id="productQuantity">
+              <button class="increase-qty">+</button>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button class="add-to-cart-btn" id="modalAddToCart">Add to Cart</button>
+            <button class="buy-now-btn">Buy Now</button>
+          </div>
+          <div class="product-meta-info">
+            <div class="meta-item">
+              <i class="fas fa-truck"></i>
+              <span>Free shipping for orders above ₹999</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-box"></i>
+              <span>Special gift packing available</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-calendar-check"></i>
+              <span>Delivered within 2-3 business days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Amar Sweet Home</h3>
+          <p>Delighting taste buds with authentic Rajasthani sweets since 1975. Our recipes have been passed down for generations, preserving the rich heritage of traditional Indian confections.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sweets.html">Our Sweets</a></li>
+            <li><a href="bestsellers.html">Best Sellers</a></li>
+            <li><a href="giftpacks.html">Gift Packs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Sweet Lane, Jodhpur Old City, Rajasthan, India - 342001</li>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@amarsweethome.com">info@amarsweethome.com</a></li>
+            <li><i class="far fa-clock"></i> Monday - Saturday: 8:00 AM - 9:00 PM<br>Sunday: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Subscribe</h3>
+          <p>Stay updated with our latest offerings and seasonal specials.</p>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+          <p class="disclaimer">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Amar Sweet Home. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Notification -->
+  <div class="cart-notification" id="cartNotification">
+    <div class="notification-content">
+      <i class="fas fa-check-circle"></i>
+      <p>Item added to cart!</p>
+    </div>
+    <div class="notification-actions">
+      <a href="cart.html" class="view-cart-btn">View Cart</a>
+      <button class="close-notification">Continue Shopping</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/sweets.js"></script>
+</body>
+</html>
